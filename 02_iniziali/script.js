@@ -5,7 +5,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 // Function
-function namesInitals(arr) {
+//function namesInitals(arr) {
+//    let arrInitials = [];
+
+//    for (i = 0; i < arr.length; i++) {
+//        arrInitials.push(arr[i].charAt(0))
+//    }
+
+//    return arrInitials
+//}
+
+// Arrow function
+namesInitals = (arr) => {
     let arrInitials = [];
 
     for (i = 0; i < arr.length; i++) {
