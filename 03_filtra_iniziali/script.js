@@ -4,10 +4,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+// Function
+function namesInitialA(arr) {
+    let arrA = [];
 
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].charAt(0) == "A") {
+            arrA.push(arr[i])
+        }
+    }
+
+    return arrA
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(namesInitialA(names))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
