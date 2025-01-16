@@ -5,33 +5,33 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 // Function
-//function namesInitialA(arr) {
-//    let arrA = [];
+//function namesInitial(arr, letter) {
+//    let arrInitals = [];
 
 //    for (i = 0; i < arr.length; i++) {
-//        if (arr[i].charAt(0) == "A") {
-//            arrA.push(arr[i])
+//        if (arr[i].charAt(0) == letter.toUpperCase()) {
+//            arrInitals.push(arr[i])
 //        }
 //    }
 
-//    return arrA
+//    return arr
 //}
 
 // Arrow function
-namesInitialA = (arr) => {
-    let arrA = [];
+namesInitial = (arr, letter) => {
+    let arrInitals = [];
 
     for (i = 0; i < arr.length; i++) {
-        if (arr[i].charAt(0) == "A") {
-            arrA.push(arr[i])
+        if (arr[i].charAt(0) == letter.toUpperCase()) {
+            arrInitals.push(arr[i])
         }
     }
 
-    return arrA
+    return arrInitals
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(namesInitialA(names))
+console.log(namesInitial(names, "a"))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
