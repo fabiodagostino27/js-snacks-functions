@@ -5,7 +5,20 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 // Function
-function vowels(string) {
+//function vowels(string) {
+//    let arrVowels = [];
+
+//    for (i = 0; i < string.length; i++) {
+//        if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+//            arrVowels.push(string.charAt(i))
+//        } 
+//    }
+
+//    return arrVowels
+//}
+
+// Arrow function
+vowels = (string) => {
     let arrVowels = [];
 
     for (i = 0; i < string.length; i++) {
@@ -15,7 +28,6 @@ function vowels(string) {
     }
 
     return arrVowels
-
 }
 
 // Invoca la funzione qui e stampa il risultato in console
