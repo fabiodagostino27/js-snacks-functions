@@ -14,7 +14,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 //        }
 //    }
 
-//    return arr
+//    return arrInitials
 //}
 
 // Arrow function
