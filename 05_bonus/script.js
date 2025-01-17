@@ -25,7 +25,7 @@ const name = 'Mario';
 let whatTimeIsIt = new Date().getHours();
 let greeting;
 
-greetingUser = (string) => (whatTimeIsIt <= 13) ? greeting = `Buongiorno ${string}` : (whatTimeIsIt <= 17) ? greeting = `Buon pomeriggio ${string}` : greeting = `Buonasera ${string}`
+greetingUser = (string) => (whatTimeIsIt <= 13 && whatTimeIsIt >= 5) ? greeting = `Buongiorno ${string}` : (whatTimeIsIt <= 17 && whatTimeIsIt > 13) ? greeting = `Buon pomeriggio ${string}` : greeting = `Buonasera ${string}`
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(greetingUser(name))
